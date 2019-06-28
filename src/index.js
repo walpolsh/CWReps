@@ -3,13 +3,16 @@ import ReactDOM from "react-dom";
 import { songDecoder } from "./6KYU/Dubstep";
 import { findEvenIndex } from "./6KYU/EqualSidesOfAnArray";
 import { partsSums } from "./6KYU/SumOfParts";
+import { sqInRect } from "./6KYU/RectangleIntoSquare.js";
+import { SpreadNumbers } from "./6KYU/SpreadNumbers.js";
+import { isTriangle } from "./7KYU/Triangle";
 import "./styles.css";
 
 console.log(songDecoder("AWUBBWUBC"));
 console.log(songDecoder("AWUBWUBWUBBWUBWUBWUBC"));
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <h1>Hello CodeSandbox</h1>
       <h2>Start editing to see some magic happen!</h2>
     </div>
