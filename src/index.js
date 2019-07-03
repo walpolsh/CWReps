@@ -9,6 +9,9 @@ import { isTriangle } from "./7KYU/Triangle";
 import { printerError } from "./7KYU/printerError";
 import { dir } from "./5KYU/DirectionsReduction";
 import { oC } from "./7KYU/orderedCount";
+import { sortAndTransform } from "./7KYU/sortAndTransform";
+import { change } from "./7KYU/looseChange.js";
+import { bal } from "./6KYU/balance.js";
 import "./styles.css";
 
 function App() {
