@@ -6,10 +6,11 @@ import { partsSums } from "./6KYU/SumOfParts";
 import { sqInRect } from "./6KYU/RectangleIntoSquare.js";
 import { SpreadNumbers } from "./6KYU/SpreadNumbers.js";
 import { isTriangle } from "./7KYU/Triangle";
+import { printerError } from "./7KYU/printerError";
+import { dir } from "./5KYU/DirectionsReduction";
+import { oC } from "./7KYU/orderedCount";
 import "./styles.css";
 
-console.log(songDecoder("AWUBBWUBC"));
-console.log(songDecoder("AWUBWUBWUBBWUBWUBWUBC"));
 function App() {
   return (
     <div className='App'>
