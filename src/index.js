@@ -22,6 +22,9 @@ import { pig } from "./5KYU/pigIt";
 import { human } from "./5KYU/humanReadable";
 import { valid } from "./5KYU/validParentheses";
 import { passTheDoorMan } from "./7KYU/passTheDoorMan";
+import { findAllPairs } from "./7KYU/findAllPairs";
+import { str } from "./6KYU/stress";
+import { orders } from "./6KYU/order";
 import "./styles.css";
 
 function App() {
