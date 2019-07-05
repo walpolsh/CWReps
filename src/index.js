@@ -25,6 +25,9 @@ import { passTheDoorMan } from "./7KYU/passTheDoorMan";
 import { findAllPairs } from "./7KYU/findAllPairs";
 import { str } from "./6KYU/stress";
 import { orders } from "./6KYU/order";
+import { unique } from "./6KYU/uniqueInOrder";
+import { even } from "./7KYU/evenChars";
+import { solution } from "./7KYU/stringEndsWith";
 import "./styles.css";
 
 function App() {
