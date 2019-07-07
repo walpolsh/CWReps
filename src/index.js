@@ -28,6 +28,9 @@ import { orders } from "./6KYU/order";
 import { unique } from "./6KYU/uniqueInOrder";
 import { even } from "./7KYU/evenChars";
 import { solution } from "./7KYU/stringEndsWith";
+import { diff } from "./6KYU/array_diff";
+import { trib } from "./6KYU/tribonacci";
+import { dig } from "./6KYU/digPow";
 import "./styles.css";
 
 function App() {
