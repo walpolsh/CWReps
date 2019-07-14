@@ -35,8 +35,11 @@ import ReactDOM from "react-dom";
 // import { order } from "./6KYU/getOrder";
 // import { diamonds } from "./6KYU/diamond";
 // import { avg } from "./7KYU/avgArray";
-import { deleteDig } from "./6KYU/deleteDigit";
+// import { deleteDig } from "./6KYU/deleteDigit";
 import "./styles.css";
+const penis = "penis",
+  penisssssssss = "penis";
+console.log("penis === penisssssssss", penis === penisssssssss);
 
 function App() {
   return (
