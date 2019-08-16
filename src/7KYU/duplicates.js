@@ -1,15 +1,16 @@
-function duplicates(arr, obj = {}, arr2 = []) {
-  return arr.map(x => {
-    if (!obj[x]) {
-      obj[`${x}`] = 1;
-    } else {
-      obj[`${x}`]++;
-    }
-    return obj.x;
+export function duplicates(arr) {
+  if (arr.length <= 1) {
+    return 0;
+  }
+  let hash = {};
+  let arr2 = [];
+  arr.map(x => {
+    hash[x] ? (hash[x] += 1) : (hash[x] = 1);
   });
-}
 
-export const dup = console.log(
-  duplicates([1, 2, 4, 4, 3, 3, 1, 5, 3, "5"]),
-  duplicates([0, 1, 2, 3, 4, 5])
-);
+  let a = arr.map(x => hash[x] % 2 === 0 && arr2.push(hash[x]));
+  console.log(a);
+  console.log(arr2);
+
+  return count;
+}

@@ -1,4 +1,4 @@
-function iqTest(numbers) {
+export function iqTest(numbers) {
   let numSplit = numbers.split(" ");
   let f1 = numSplit.filter(x => x % 2 === 0);
   let f2 = numSplit.filter(x => x % 2 !== 0);

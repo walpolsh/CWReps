@@ -4,31 +4,68 @@ import { sequenceSum } from "./sequenceSum";
 import { dontGiveMeFive } from "./dontGiveMeFive";
 import { stray } from "./stray";
 import { incrementer } from "./incrementer";
+import { solve } from "./solve";
+import { duplicates } from "./duplicates";
 
 // template
 // it('🤙', () => {
-
+// expect().toBe()
 // })
 it("🤙", () => {
-  expect(incrementer([])).toStrictEqual([]);
+  expect(duplicates([1, 2, 5, 6, 5, 2])).toBe(2);
 });
 it("🤙", () => {
-  expect(incrementer([1, 2, 3])).toStrictEqual([2, 4, 6]);
+  expect(duplicates([1, 2, 2, 20, 6, 20, 2, 6, 2])).toBe(4);
 });
 it("🤙", () => {
-  expect(incrementer([4, 6, 7, 1, 3])).toStrictEqual([5, 8, 0, 5, 8]);
+  expect(duplicates([0, 0, 0, 0, 0, 0, 0])).toBe(3);
 });
 it("🤙", () => {
-  expect(incrementer([3, 6, 9, 8, 9])).toStrictEqual([4, 8, 2, 2, 4]);
+  expect(duplicates([1000, 1000])).toBe(1);
 });
 it("🤙", () => {
-  expect(incrementer([1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 9, 9, 8])).toStrictEqual(
-    [2, 4, 6, 8, 0, 2, 4, 6, 8, 9, 0, 1, 2, 2]
-  );
+  expect(duplicates([])).toBe(0);
 });
 it("🤙", () => {
-  expect(incrementer([])).toStrictEqual([]);
+  expect(duplicates([54])).toBe(0);
 });
+
+// it("🤙", () => {
+//   expect(solve(["abode", "ABc", "xyzD"])).toStrictEqual([4, 3, 1]);
+// });
+// it("🤙", () => {
+//   expect(solve(["abide", "ABc", "xyz"])).toStrictEqual([4, 3, 0]);
+// });
+// it("🤙", () => {
+//   expect(solve(["IAMDEFANDJKL", "thedefgh", "xyzDEFghijabc"])).toStrictEqual([
+//     6,
+//     5,
+//     7
+//   ]);
+// });
+// it("🤙", () => {
+//   expect(solve(["encode", "abc", "xyzD", "ABmD"])).toStrictEqual([1, 3, 1, 3]);
+// });
+// it("🤙", () => {
+//   expect(incrementer([])).toStrictEqual([]);
+// });
+// it("🤙", () => {
+//   expect(incrementer([1, 2, 3])).toStrictEqual([2, 4, 6]);
+// });
+// it("🤙", () => {
+//   expect(incrementer([4, 6, 7, 1, 3])).toStrictEqual([5, 8, 0, 5, 8]);
+// });
+// it("🤙", () => {
+//   expect(incrementer([3, 6, 9, 8, 9])).toStrictEqual([4, 8, 2, 2, 4]);
+// });
+// it("🤙", () => {
+//   expect(incrementer([1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 9, 9, 8])).toStrictEqual(
+//     [2, 4, 6, 8, 0, 2, 4, 6, 8, 9, 0, 1, 2, 2]
+//   );
+// });
+// it("🤙", () => {
+//   expect(incrementer([])).toStrictEqual([]);
+// });
 // it("🤙", () => {
 //   expect(stray([1, 1, 2])).toBe(2);
 // });
