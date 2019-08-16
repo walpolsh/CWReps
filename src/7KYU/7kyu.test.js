@@ -2,18 +2,49 @@ import { calculateYears } from "./calculateYears";
 import { SeriesSum } from "./SeriesSum";
 import { sequenceSum } from "./sequenceSum";
 import { dontGiveMeFive } from "./dontGiveMeFive";
+import { stray } from "./stray";
+import { incrementer } from "./incrementer";
 
 // template
 // it('🤙', () => {
 
 // })
 it("🤙", () => {
-  expect(dontGiveMeFive(1, 9)).toBe(8);
+  expect(incrementer([])).toStrictEqual([]);
 });
 it("🤙", () => {
-  expect(dontGiveMeFive(4, 17)).toBe(12);
+  expect(incrementer([1, 2, 3])).toStrictEqual([2, 4, 6]);
 });
-it("🤙", () => {});
+it("🤙", () => {
+  expect(incrementer([4, 6, 7, 1, 3])).toStrictEqual([5, 8, 0, 5, 8]);
+});
+it("🤙", () => {
+  expect(incrementer([3, 6, 9, 8, 9])).toStrictEqual([4, 8, 2, 2, 4]);
+});
+it("🤙", () => {
+  expect(incrementer([1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 9, 9, 8])).toStrictEqual(
+    [2, 4, 6, 8, 0, 2, 4, 6, 8, 9, 0, 1, 2, 2]
+  );
+});
+it("🤙", () => {
+  expect(incrementer([])).toStrictEqual([]);
+});
+// it("🤙", () => {
+//   expect(stray([1, 1, 2])).toBe(2);
+// });
+// it("🤙", () => {
+//   expect(stray([17, 17, 3, 17, 17, 17, 17])).toBe(3);
+// });
+// it("🤙", () => {
+//   expect(stray([8, 1, 1, 1, 1, 1])).toBe(8);
+// });
+
+// it("🤙", () => {
+//   expect(dontGiveMeFive(1, 9)).toBe(8);
+// });
+// it("🤙", () => {
+//   expect(dontGiveMeFive(4, 17)).toBe(12);
+// });
 // it("🤙", () => {
 //   expect(sequenceSum(2, 6, 2)).toBe(12);
 // });

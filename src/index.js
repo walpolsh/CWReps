@@ -38,10 +38,6 @@ import ReactDOM from "react-dom";
 // import { deleteDig } from "./6KYU/deleteDigit";
 // import { dontGiveMeFive } from "./7KYU/dontGiveMeFive";
 import "./styles.css";
-const penis = "penis",
-  penisssssssss = "penis";
-console.log("penis === penisssssssss", penis === penisssssssss);
-
 function App() {
   return (
     <div className="App">
