@@ -6,29 +6,52 @@ import { stray } from "./stray";
 import { incrementer } from "./incrementer";
 import { solve } from "./solve";
 import { duplicates } from "./duplicates";
+import { londonCityHacker } from "./londonCityHacker";
 
 // template
 // it('🤙', () => {
 // expect().toBe()
 // })
 it("🤙", () => {
-  expect(duplicates([1, 2, 5, 6, 5, 2])).toBe(2);
+  expect().toBe();
 });
-it("🤙", () => {
-  expect(duplicates([1, 2, 2, 20, 6, 20, 2, 6, 2])).toBe(4);
-});
-it("🤙", () => {
-  expect(duplicates([0, 0, 0, 0, 0, 0, 0])).toBe(3);
-});
-it("🤙", () => {
-  expect(duplicates([1000, 1000])).toBe(1);
-});
-it("🤙", () => {
-  expect(duplicates([])).toBe(0);
-});
-it("🤙", () => {
-  expect(duplicates([54])).toBe(0);
-});
+// it("🤙", () => {
+//   expect(londonCityHacker([12, "Central", "Circle", 21])).toBe("£7.80");
+// });
+// it("🤙", () => {
+//   expect(londonCityHacker(["Piccidilly", 56])).toBe("£3.90");
+// });
+// it("🤙", () => {
+//   expect(londonCityHacker(["Northern", "Central", "Circle"])).toBe("£7.20");
+// });
+// it("🤙", () => {
+//   expect(londonCityHacker(["Piccidilly", 56, 93, 243])).toBe("£5.40");
+// });
+// it("🤙", () => {
+//   expect(londonCityHacker([386, 56, 1, 876])).toBe("£3.00");
+// });
+// it("🤙", () => {
+//   expect(londonCityHacker([])).toBe("£0.00");
+// });
+
+// it("🤙", () => {
+//   expect(duplicates([1, 2, 5, 6, 5, 2])).toBe(2);
+// });
+// it("🤙", () => {
+//   expect(duplicates([1, 2, 2, 20, 6, 20, 2, 6, 2])).toBe(4);
+// });
+// it("🤙", () => {
+//   expect(duplicates([0, 0, 0, 0, 0, 0, 0])).toBe(3);
+// });
+// it("🤙", () => {
+//   expect(duplicates([1000, 1000])).toBe(1);
+// });
+// it("🤙", () => {
+//   expect(duplicates([])).toBe(0);
+// });
+// it("🤙", () => {
+//   expect(duplicates([54])).toBe(0);
+// });
 
 // it("🤙", () => {
 //   expect(solve(["abode", "ABc", "xyzD"])).toStrictEqual([4, 3, 1]);
