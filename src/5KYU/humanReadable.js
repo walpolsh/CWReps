@@ -1,18 +1,14 @@
 function humanReadable(seconds) {
-  // 1 hour has 60 minutes and one minute has 60 seconds:
-  // 1 hour = (60 minutes/hour) × (60 seconds/minute)
-  // = 3600 seconds/hour
-  //359999 seconds on the clock
-  //if >=359900
-
-  if (seconds < 60) {
-    return `00:00:${seconds < 10 ? "0" + seconds : seconds}`;
-  } else if (seconds > 60 && seconds < 3600) {
-    return `00:${seconds}`;
-  }
+  let sec_num = parseInt(seconds, 10);
+  let hours = Math.floor(sec_num / 3600);
+  let minutes = Math.floor((sec_num - hours * 3600) / 60);
+  let secs = sec_num - hours * 3600 - minutes * 60;
+  if (hours < 10) hours = "0" + hours;
+  if (minutes < 10) minutes = "0" + minutes;
+  if (secs < 10) secs = "0" + secs;
+  return hours + ":" + minutes + ":" + secs;
 }
-
-export const human = console.log(
+console.log(
   humanReadable(0),
   "00:00:00",
   "humanReadable(0)",
