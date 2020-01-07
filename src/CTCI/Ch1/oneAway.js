@@ -1,3 +1,9 @@
+let splitMapFilter = (arr, arr2) =>
+  arr
+    .split("")
+    .map(char => !arr2.includes(char))
+    .filter(x => x === true).length !== 1;
+
 export const oneAway = strings => {
   let [string1, string2] = [strings[0], strings[1]];
   if (
@@ -10,6 +16,29 @@ export const oneAway = strings => {
   }
   return true;
 };
+
+function oneEditInsert(str1, str2) {
+  let index1 = 0;
+  let index2 = 0;
+  while (index2 <= str2.length && index1 <= str1.length) {
+    if (str1[index1] !== str2[index2]) {
+      return false;
+    }
+  }
+}
+
+export const oneAway2 = strings => {
+  let [string1, string2] = [strings[0], strings[1]];
+  let charNotFound = char => !string2.includes(char);
+  let filterTrue = string => string.filter(x => x === true);
+  if (
+    filterTrue(string1.split("").map(char => charNotFound(char))).length !== 1
+  ) {
+    return false;
+  }
+  return true;
+};
+
 // // insert a char for str1 -> remove a char for str2
 // const checkOneMissing = function(first = first1[0], second = first[1]) {
 //   if (first.length !== second.length - 1) {

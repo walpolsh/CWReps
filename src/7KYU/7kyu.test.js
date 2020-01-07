@@ -8,13 +8,19 @@ import { solve } from "./solve";
 import { duplicates } from "./duplicates";
 import { londonCityHacker } from "./londonCityHacker";
 
+import { calculate } from "./calculate";
+function expectToBe(fn, input, output) {
+  return it(`expect ${fn.name}('${input}') to be ${"" + output})}`, () => expect(fn(input)).toBe(output));
+}
 // template
 // it('🤙', () => {
 // expect().toBe()
 // })
-it("🤙", () => {
-  expect().toBe();
-});
+
+expectToBe(calculate, "1plus2plus3plus4", "10");
+expectToBe(calculate, "1minus2minus3minus4", "-8");
+expectToBe(calculate, "1plus2plus3minus4", "2");
+
 // it("🤙", () => {
 //   expect(londonCityHacker([12, "Central", "Circle", 21])).toBe("£7.80");
 // });

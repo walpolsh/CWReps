@@ -3,6 +3,26 @@ import { stringTransformer } from "./stringTransformer";
 import { wave } from "./wave";
 import { times } from "./times";
 import { sortString } from "./sortString";
+import { high } from "./high";
+import { tickets } from "./tickets";
+import { cleanString } from "./cleanString";
+function expectToBe(fn, input, output) {
+  return it(`expect ${fn.name}('${input}') to be ${"" + output})}`, () => expect(fn(input)).toBe(output));
+}
+
+// expectToBe(high, "man i need a taxi up to ubud", "taxi");
+// expectToBe(high, "what time are we climbing up the volcano", "volcano");
+// expectToBe(high, "take me to semynak", "semynak");
+// expectToBe(
+//   high,
+//   "odkwjavgnnqzimktn bubdmnaptgqflkopc wpobexowjpvwawjum wyilrschlyjqrluzd",
+//   "wpobexowjpvwawjum"
+// );
+
+// expectToBe(tickets, [25, 50, 50], "YES");
+// expectToBe(tickets, [25, 100], "NO");
+// expectToBe(tickets, [25, 25, 25, 25, 25, 100, 100], "NO");
+
 // it("🤙", () => {
 //   expect().toBe();
 // });
