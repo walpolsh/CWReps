@@ -8,6 +8,7 @@ import { tickets } from "./tickets";
 import { cleanString } from "./cleanString";
 import { solution } from "./splitStrings";
 import { deleteNth } from "./deleteNth";
+import { narcissistic } from "./narcissistic";
 function expectToBe(fn, input, output) {
   return it(`expect ${fn.name}('${input}') to be ${"" + output})}`, () => expect(fn(input)).toBe(output));
 }
