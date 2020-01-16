@@ -7,8 +7,10 @@ import { incrementer } from "./incrementer";
 import { solve } from "./solve";
 import { duplicates } from "./duplicates";
 import { londonCityHacker } from "./londonCityHacker";
+import { maxMultiple } from "./maxMultiple";
 
 import { calculate } from "./calculate";
+import { getDivisorsCnt } from "./getDivisorsCnt";
 function expectToBe(fn, input, output) {
   return it(`expect ${fn.name}('${input}') to be ${"" + output})}`, () => expect(fn(input)).toBe(output));
 }
