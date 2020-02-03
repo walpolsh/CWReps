@@ -11,6 +11,7 @@ import { maxMultiple } from "./maxMultiple";
 
 import { calculate } from "./calculate";
 import { getDivisorsCnt } from "./getDivisorsCnt";
+import { houseNumbersSum } from "./houseNumbersSum";
 function expectToBe(fn, input, output) {
   return it(`expect ${fn.name}('${input}') to be ${"" + output})}`, () => expect(fn(input)).toBe(output));
 }
