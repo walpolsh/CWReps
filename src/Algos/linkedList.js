@@ -98,22 +98,49 @@ class LinkedList {
   }
   traverseToIndex(index) {
     let currentNode = this.head;
-    for (let i = 0; i < index - 1; i++) {
+    let count = 0;
+    while (count !== index) {
       currentNode = currentNode.next;
+      count++;
     }
+
     return currentNode;
   }
   insert(index, value) {
     if (index >= this.length) {
-      return this.append(value);
+      this.append(value);
+      return this.printList();
+    }
+    if (index === 0) {
+      this.prepend(value);
+      return this.printList();
     }
     const newNode = new Node(value);
-    let leadingNode = this.traverseToIndex(index - 1);
-    let holdingPointer = leadingNode.next;
-    leadingNode.next = newNode;
+    let leader = this.traverseToIndex(index - 1);
+    let holdingPointer = leader.next;
+    leader.next = newNode;
     newNode.next = holdingPointer;
     this.length++;
     return this.printList();
+  }
+  remove(index) {
+    if (index === 0) {
+      this.head = this.head.next;
+      this.length--;
+      return this.printList();
+    }
+    if (index >= this.length) {
+      let leader = this.traverseToIndex(this.length - 1);
+      leader.next = null;
+      this.length--;
+      return this.printList();
+    }
+    let leader = this.traverseToIndex(index - 1);
+    let unwantedNode = leader.next;
+    leader.next = unwantedNode.next;
+    this.length--;
+    return this.printList();
+    // 1 - 2 - 3
   }
 }
 
@@ -121,7 +148,12 @@ const myLinkedList = new LinkedList(2);
 myLinkedList.append(3);
 myLinkedList.append(4);
 myLinkedList.prepend(1);
-myLinkedList.insert(1, "hello");
-myLinkedList.insert(9999, "goodbye");
-
 myLinkedList.printList();
+myLinkedList.insert(0, "hello");
+myLinkedList.insert(2, "hey hey");
+myLinkedList.insert(9999, "goodbye");
+myLinkedList.remove(2);
+myLinkedList.remove(4);
+myLinkedList.remove(3);
+myLinkedList.remove(0);
+myLinkedList.remove(991249);
