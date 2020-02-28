@@ -1,5 +1,6 @@
 import { calculate } from "./calculate";
-import { menFromBoys } from "./menFromBoys";
+// import { menFromBoys } from "./menFromBoys";
+import { extraPerfect } from "./extraPerfect";
 function expectToBe(fn, input, output) {
   return it(`expect ${fn.name}('${input}') to be ${"" + output})}`, () => expect(fn(input)).toBe(output));
 }
