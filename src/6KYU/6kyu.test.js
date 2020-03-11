@@ -1,14 +1,4 @@
-import { countSmileys } from "./countSmileys";
-import { stringTransformer } from "./stringTransformer";
-import { wave } from "./wave";
-import { times } from "./times";
-import { sortString } from "./sortString";
-import { high } from "./high";
-import { tickets } from "./tickets";
-import { cleanString } from "./cleanString";
-import { solution } from "./splitStrings";
-import { deleteNth } from "./deleteNth";
-import { narcissistic } from "./narcissistic";
+import { yesNo } from "./yesNo";
 function expectToBe(fn, input, output) {
   return it(`expect ${fn.name}('${input}') to be ${"" + output})}`, () => expect(fn(input)).toBe(output));
 }
@@ -18,7 +8,7 @@ function expectToStrictEqual(fn, input, output) {
 
 // expectToBe(deleteNth, ([20, 37, 20, 21], 1), [20, 37, 21]);
 
-expectToStrictEqual(solution, "abc", ["ab", "c_"]);
+// expectToStrictEqual(solution, "abc", ["ab", "c_"]);
 // expectToStrictEqual(solution, "abcdef", ["ab", "cd", "ef"]);
 // expectToBe(high, "man i need a taxi up to ubud", "taxi");
 // expectToBe(high, "what time are we climbing up the volcano", "volcano");
