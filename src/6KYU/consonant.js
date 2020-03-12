@@ -35,7 +35,6 @@ export function solve(s) {
   let arr2 = [];
   for (let i = 0; i < s.length; i++) {
     if (s[i].match(/[^aeiou]/)) {
-      console.log(s[i], arr1);
       arr2.push(s[i]);
     } else {
       arr1.push(arr2);
