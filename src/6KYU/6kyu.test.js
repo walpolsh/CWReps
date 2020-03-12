@@ -1,4 +1,4 @@
-import { yesNo } from "./yesNo";
+import { solve } from "./consonant";
 function expectToBe(fn, input, output) {
   return it(`expect ${fn.name}('${input}') to be ${"" + output})}`, () => expect(fn(input)).toBe(output));
 }
