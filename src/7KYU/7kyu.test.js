@@ -1,4 +1,4 @@
-import { capitalize } from "./capitalize";
+import { sortReindeer } from "./sortReindeer";
 // import { menFromBoys } from "./menFromBoys";
 // import { number } from "./testing123";
 function expectToBe(fn, input, output) {
