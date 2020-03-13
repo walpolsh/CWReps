@@ -1,6 +1,6 @@
-import { calculate } from "./calculate";
+import { capitalize } from "./capitalize";
 // import { menFromBoys } from "./menFromBoys";
-import { number } from "./testing123";
+// import { number } from "./testing123";
 function expectToBe(fn, input, output) {
   return it(`expect ${fn.name}('${input}') to be ${"" + output})}`, () => expect(fn(input)).toBe(output));
 }
@@ -9,7 +9,7 @@ function expectToBe(fn, input, output) {
 // expect().toBe()
 // })
 
-expectToBe(calculate, "1plus2plus3plus4", "10");
+// expectToBe(calculate, "1plus2plus3plus4", "10");
 
 // it("🤙", () => {
 //   expect(londonCityHacker([12, "Central", "Circle", 21])).toBe("£7.80");
